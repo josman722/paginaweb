@@ -1,0 +1,252 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+/* Header */
+.header {
+    background-color: #0077b6;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.logo {
+    width: 800px;
+    height: 60px;
+    background-image: url('imagenes/logo\ sin\ fondo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #00b4d8;
+    color: #efe308;
+    text-align: center;
+    padding: 4rem 2rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    animation: slide 12s infinite;
+}
+
+/* Hero Image Slider */
+@keyframes slide {
+    0% { background-image: url('imagenes/natacion.jpg'); }
+    33% { background-image: url('imagenes/natacionniños1.jpg'); }
+    66% { background-image: url('imagenes/fitness7.jpg'); }
+    100% { background-image: url('imagenes/aquabebe.jpg'); }
+}
+
+
+.hero:hover {
+    animation-play-state: paused;
+    box-shadow: 0 0 20px 10px rgba(241, 241, 238, 0.8);
+}
+
+.hero h1, 
+.hero p, 
+.hero .btn {
+    transition: text-shadow 0.3s ease;
+}
+
+.hero:hover h1, 
+.hero:hover p, 
+.hero:hover .btn {
+    text-shadow: 0 0 15px rgba(214, 247, 26, 0.9);
+}
+/* Botón principal */
+.btn {
+    background-color: #ff7f50; /* Color del botón */
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e76f3f;
+}
+
+/* Botón secundario */
+.btn-secondary {
+    background-color: #0077b6; /* Color del botón secundario */
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #005f8c;
+}
+
+/* About Section */
+.about {
+    padding: 2rem;
+    background-color: #f4f4f9;
+    text-align: center;
+}
+/* Características de la Piscina */
+.pool-features {
+    padding: 2rem;
+    background-color: #f4f4f9;
+    text-align: center;
+}
+
+.pool-features h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.feature-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.feature {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+    color: #0077b6;
+    margin-bottom: 0.5rem;
+}
+
+.feature p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Estilo para las imágenes de cada característica */
+.feature-image {
+    width: 100%;
+    height: 200px; /* Ajusta la altura según lo necesario */
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+/* Programs Section */
+.programs {
+    padding: 2rem;
+    background-color: #e1f5fe;
+}
+
+/* Cambia el display a block para mostrar los programas uno debajo del otro */
+.program-list {
+    display: block; /* Cambiado de flex a block */
+    gap: 1rem; /* Espacio entre los elementos */
+}
+
+/* Cada programa se ajusta a todo el ancho disponible */
+.program {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem; /* Espacio entre cada programa */
+}
+/* Programs Section */
+.programs {
+    padding: 2rem;
+    background-color: #e1f5fe;
+}
+
+.program-list {
+    display: block;
+    gap: 1rem;
+}
+
+/* Programa individual con imagen de fondo */
+.program {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    background-size: cover;
+    background-position: center;
+    height: 200px; /* Ajusta la altura según tus necesidades */
+}
+
+/* Asignar una imagen de fondo específica a cada programa */
+.program:nth-child(1) {
+    background-image: url('imagenes/natacionniños2.webp'); /* Imagen para el programa de niños */
+}
+
+.program:nth-child(2) {
+    background-image: url('imagenes/natacionadultos.jpg'); /* Imagen para el programa de adultos */
+}
+
+.program:nth-child(3) {
+    background-image: url('imagenes/aquafitness1.jpg'); /* Imagen para el programa de fitness acuático */
+}
+
+.program:nth-child(4) {
+    background-image: url('imagenes/aquabebe1.jpg'); /* Imagen para el programa de bebés */
+}
+/* Contact Form */
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #0077b6;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer */
+.footer {
+    background-color: #0077b6;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
